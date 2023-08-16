@@ -1,5 +1,7 @@
 # Proxy
 A package to help simplify setup and address cycling for webscraping applications.
+## Using Proxy
+to use proxy begin by importing it and making an instance it
 ## A Simple Example Program
 to start make or find a list of proxies in a txt file for this example we are using this list of 4 addresses in a file called examples.txt
 ```
@@ -24,8 +26,13 @@ proxy.get_proxy_data()
 # The number of times a proxy has been used increases whenever the function get_address is called which may cause it to accidentally cycle. 
 # In that case just call for proxy.address() if you need to call the address without acidentally cycling.
 for time in range(30):
-    req = request.Request(
-        "https://webscraper.io/test-sites/e-commerce/allinone")
+    req = request.Request("https://webscraper.io/test-sites/e-commerce/allinone")
     req.set_proxy(proxy.get_address(), 'http')
     response = urlopen(req)
+```
+Since debug is enabled the output should be as follows
+```
+<objectname at id> has cycled to 3.24.58.156:3128 
+3.24.58.156:3128 
+
 ```
