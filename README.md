@@ -1,7 +1,7 @@
 # Proxy
 A package to help simplify setup and address cycling for webscraping applications.
 ## A Simple Example Program
-to start make or find a list of proxies in a txt file for this example we are using this list of 4 addresses
+to start make or find a list of proxies in a txt file for this example we are using this list of 4 addresses in a file called examples.txt
 ```
 203.243.63.16:80 
 3.24.58.156:3128 
@@ -21,7 +21,7 @@ print(proxy.get_address())
 # returns data concerning the current address such as anonymity country and protocol
 proxy.get_proxy_data()
 # The following block shows how the object automatically cycles IP's to avoid detection
-# The number of times a proxy has been used increases whenever the function get_adress is called which may cause it to accidentally cycle. 
+# The number of times a proxy has been used increases whenever the function get_address is called which may cause it to accidentally cycle. 
 # In that case just call for proxy.address() if you need to call the address without acidentally cycling.
 for time in range(30):
     req = request.Request(
