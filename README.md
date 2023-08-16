@@ -1,8 +1,11 @@
 # Proxy
 A package to help simplify setup and address cycling for webscraping applications.
 ## A Simple Example Program
-to start make or find a list of proxies in a txt file for this example we are using this list of adresses
-
+to start make or find a list of proxies in a txt file for this example we are using this list of 4 addresses
+203.243.63.16:80
+3.24.58.156:3128
+95.217.104.21:24815
+103.151.41.7:80
 ```python
 import Proxy
 from urllib import request
