@@ -3,10 +3,10 @@ A package to help simplify setup and address cycling for webscraping application
 ## A Simple Example Program
 to start make or find a list of proxies in a txt file for this example we are using this list of 4 addresses
 ```
-203.243.63.16:80
-3.24.58.156:3128
-95.217.104.21:24815
-103.151.41.7:80
+203.243.63.16:80 \n
+3.24.58.156:3128 \n
+95.217.104.21:24815 \n
+103.151.41.7:80 \n
 ```
 ```python
 import Proxy
